@@ -14,24 +14,3 @@ Cenário: Atualização com sucesso
   Então a atualização deve ser realizar com sucesso
 
 
-
-# Funcionalidade: Busca e atualização de usuários
-
-#   Cenário: Buscar usuário pelo email
-#     Dado que estou na página de usuários
-#     Quando eu busco pelo email "<email>"
-#     Então eu devo ver os detalhes do usuário com email "<email>"
-
-#   Cenário: Buscar usuário pelo nome
-#     Dado que estou na página de usuários
-#     Quando eu busco pelo nome "<nome>"
-#     Então eu devo ver os detalhes do usuário com nome "<nome>"
-
-#   Cenário: Atualizar informações do usuário
-#     Dado que estou na página de usuários
-#     Quando eu encontro o usuário com ID "<id>"
-#     E eu atualizo as informações do usuário com:
-#       | Nome       | Email          |
-#       | <novoNome> | <novoEmail>    |
-#     Então as informações do usuário devem ser atualizadas corretamente
-
