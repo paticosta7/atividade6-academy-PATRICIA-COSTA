@@ -32,7 +32,7 @@ export class ListPage {
   }
 
   navegaEntrePaginas() {
-    // Estado inicial
+   
     cy.get("#paginacaoVoltar").should("be.disabled");
     cy.get("#paginacaoProximo").should("not.be.disabled");
     cy.get("#paginacaoAtual")
@@ -43,7 +43,7 @@ export class ListPage {
         expect(dadosPaginacao.paginaAtual).to.equal(1);
       });
 
-    // Ir para próxima página
+   
     cy.get("#paginacaoProximo").click();
     cy.get("#paginacaoVoltar").should("not.be.disabled");
     cy.get("#paginacaoAtual")
@@ -54,7 +54,7 @@ export class ListPage {
         expect(dadosPaginacao.paginaAtual).to.equal(2);
       });
 
-    // Voltar para página anterior
+  
     cy.get("#paginacaoVoltar").click();
     cy.get("#paginacaoVoltar").should("be.disabled");
     cy.get("#paginacaoAtual")
