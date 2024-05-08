@@ -7,7 +7,7 @@ export class UpdatePage {
     cy.get("button.sc-kpDqfm.dGvNqp").first().click();
   }
   preencherNome(nome) {
-    cy.get("#userName").type(nome);
+    cy.get("#userName").clear().type(nome);
   }
 
   preencherEmail(email) {
