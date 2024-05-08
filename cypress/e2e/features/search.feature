@@ -21,3 +21,4 @@ Cenário: Pesquisar usuário por nome inexistente
 Cenário: Pesquisar usuário por email inexistente
   Quando eu pesquisar por um email de usuário que não existe "usuarioinexistente@teste.com"
   Então devo ver uma mensagem indicando que nenhum usuário foi encontrado via email
+ 
