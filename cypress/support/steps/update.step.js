@@ -47,9 +47,20 @@ Then("a atualização deve ser realizar com sucesso", () => {
     .and("contain", "Informações atualizadas com sucesso!");
 });
 
-Then("deve ser eibido mensagem de formato inválido", () => {
+Then("deve ser exibido mensagem de formato inválido", () => {
   updatePage
-    .pegarMensagemErro()
+    .pegarMensagemDeErro()
     .should("be.visible")
     .and("contain", "Formato de e-mail inválido");
 });
+
+Given("o e-mail {string} já está em uso por outro usuário", () => {});
+Then(
+  "a operação de atualização deve ser bloqueada com a mensagem {string}",
+  () => {
+    updatePage
+      .pegarMensagemAlerta()
+      .should("be.visible")
+      .and("contain", "Este e-mail já é utilizado por outro usuário.");
+  }
+);

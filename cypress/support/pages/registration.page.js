@@ -37,7 +37,7 @@ export class RegistrationPage {
     return cy.buscarUsuario("batmanbegins@teste.com").then((usuario) => {
       console.log(
         "🚀 ~ RegistrationPage ~ returncy.buscarUsuario ~ usuario:",
-        usuario,
+        usuario
       );
       if (usuario?.id) {
         cy.deletarUsuario(usuario.id);

@@ -42,7 +42,7 @@ Then(
       .pegarMensagemErro()
       .should("be.visible")
       .and("contain", "O campo nome é obrigatório.");
-  },
+  }
 );
 
 Then(
@@ -52,7 +52,7 @@ Then(
       .pegarMensagemErro()
       .should("be.visible")
       .and("contain", "O campo e-mail é obrigatório.");
-  },
+  }
 );
 
 Then(
@@ -62,7 +62,7 @@ Then(
       .pegarMensagemErro()
       .should("be.visible")
       .and("contain", "Formato do nome é inválido.");
-  },
+  }
 );
 
 Then(
@@ -72,7 +72,7 @@ Then(
       .pegarMensagemErro()
       .should("be.visible")
       .and("contain", "Formato de e-mail inválido");
-  },
+  }
 );
 
 Then("deve ocorrer um erro informando que o usuário já existe", () => {
@@ -86,7 +86,7 @@ Then(
       .pegarMensagemErro()
       .should("be.visible")
       .and("contain", "Informe no máximo 100 caracteres para o nome");
-  },
+  }
 );
 
 Then(
@@ -96,7 +96,7 @@ Then(
       .pegarMensagemErro()
       .should("be.visible")
       .and("contain", "Informe no máximo 60 caracteres para o e-mail");
-  },
+  }
 );
 
 Then(
@@ -106,5 +106,5 @@ Then(
       .pegarMensagemErroNome()
       .should("be.visible")
       .and("contain", "Informe pelo menos 4 letras para o nome.");
-  },
+  }
 );

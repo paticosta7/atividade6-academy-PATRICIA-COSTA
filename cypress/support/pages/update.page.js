@@ -27,4 +27,12 @@ export class UpdatePage {
   pegarMensagemDeSucesso() {
     return cy.get(".go3958317564");
   }
+  pegarMensagemDeErro() {
+    return cy.get("span.sc-cPiKLX.feFrSQ");
+  }
+  pegarMensagemAlerta() {
+    return cy.on("window:alert", (message) => {
+      return message;
+    });
+  }
 }
